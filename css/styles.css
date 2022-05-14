@@ -52,11 +52,14 @@ p {
     padding: 0.5rem;
 }
 .header__logo {
+    transition: transform 190ms ease-out;
     padding-left: 0.5rem;
     margin: 0.5rem;
     border-radius: 100px;
 }
-
+.header__logo:hover {
+    transform: translate(0px, 0px) scale(1.1, 1.1);
+}
 nav{
     display: flex ;
     align-items: center;
@@ -66,6 +69,26 @@ nav{
     list-style-type: none;
     padding: 1rem;
 }
+.css-button-rounded--sand {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #adb5bd;
+    background: #adb5bd;
+}
+.css-button-rounded--sand:hover {
+    background: #fff;
+    color: #adb5bd
+}
+
 a {
     color: white;
     text-decoration: none;
@@ -96,16 +119,29 @@ li {
     padding: 1rem;
 }
 
-
 .portada__botonEstetica {
+    min-width: 130px;
+    height: 40px;
+    color: rgb(20, 20, 20);
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
     border-radius: 5px;
-    width: 200px;
-    height: 50px;
-    text-align: center;
-    background-color: whitesmoke;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    border-style:outset;
+    border: none;
+    background: #ced4da;
+    box-shadow: 0 5px #adb5bd;
+}
+.portada__botonEstetica:hover {
+    box-shadow: 0 3px #adb5bd;
+    top: 1px;
+}
+.portada__botonEstetica:active {
+    box-shadow: 0 0 #adb5bd;
+    top: 5px;
 }
 
 .portada__invitacion {
@@ -140,6 +176,7 @@ li {
 }
 
 .grid__futbolMasculino {
+    flex-direction: column;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -154,6 +191,7 @@ li {
 }
 
 .grid__basquet {
+    flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -168,6 +206,7 @@ li {
 }
 
 .grid__tenisMesa {
+    flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -181,6 +220,7 @@ li {
 }
 
 .grid__futbolTenis {
+    flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -193,6 +233,7 @@ li {
     height: 400px;
     padding: 0.5rem;
 }
+
 .futbol__femenino {
     border-radius: 10px;
     width: 300px;
@@ -259,15 +300,28 @@ input {
 }
 
 .contacto__boton {
-    margin: 0.5rem;
-    padding: 0.5rem;
-    text-align: center;
-    background-color: white;
-    border-style:outset;
-    border-radius: 10px;
-    width: 100px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
+    min-width: 130px;
+    height: 40px;
+    color: rgb(20, 20, 20);
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    background: #ced4da;
+    box-shadow: 0 5px #adb5bd;
+}
+.contacto__boton:hover {
+    box-shadow: 0 3px #adb5bd;
+    top: 1px;
+}
+.contacto__boton:active {
+    box-shadow: 0 0 #adb5bd;
+    top: 5px;
 }
 
 .grid__containerNosotros {
@@ -298,6 +352,7 @@ input {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
 }
 .info__parrafo {
     font-family: font-family: 'Roboto', sans-serif; ;
@@ -377,24 +432,57 @@ input {
 }
 
 .app__botonApple {
+    min-width: 130px;
+    height: 40px;
+    color: rgb(20, 20, 20);
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
     border-radius: 5px;
-    width: 200px;
-    height: 50px;
-    text-align: center;
-    background-color: whitesmoke;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
+    border: none;
+    background: #ced4da;
+    box-shadow: 0 5px #adb5bd;
+}
+.app__botonApple:hover {
+    box-shadow: 0 3px #adb5bd;
+    top: 1px;
+}
+.portada__botonEstetica:active {
+    box-shadow: 0 0 #adb5bd;
+    top: 5px;
 }
 
+
+
 .app__botonAndroid{
+    min-width: 130px;
+    height: 40px;
+    color: rgb(20, 20, 20);
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
     border-radius: 5px;
-    width: 200px;
-    height: 50px;
-    text-align: center;
-    background-color: whitesmoke;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
+    border: none;
+    background: #ced4da;
+    box-shadow: 0 5px #adb5bd;
 }
+.app__botonAndroid:hover {
+    box-shadow: 0 3px #adb5bd;
+    top: 1px;
+}
+.app__botonAndroid:active {
+    box-shadow: 0 0 #adb5bd;
+    top: 5px;
+}
+
 
 .prototipo {
     display: flex;
@@ -424,16 +512,33 @@ footer {
 }
 
 .facebook {
+    transition: transform 190ms ease-out;
     height: 5vh;
 }
+.facebook:hover {
+    transform: translate(0px, 0px) scale(1.1, 1.1);
+}
+
 .instagram {
+    transition: transform 190ms ease-out;
     height: 5vh;
+}
+.instagram:hover {
+    transform: translate(0px, 0px) scale(1.1, 1.1);
 }
 .youtube {
+    transition: transform 190ms ease-out;
     height: 5vh;
 }
+.youtube:hover {
+    transform: translate(0px, 0px) scale(1.1, 1.1);
+}
 .twitch {
+    transition: transform 190ms ease-out;
     height: 5vh;
+}
+.twitch:hover {
+    transform: translate(0px, 0px) scale(1.1, 1.1);
 }
 
 .footer__Derechos {
@@ -632,10 +737,10 @@ footer {
         padding: 0.1rem;
     }
     .grid__containerNosotros {
-        grid-template-areas: "titulo titulo"
-                            "informacion informacion"
-                            "staff staff"
-                            "mision mision";
+        grid-template-areas: "titulo "
+                            "informacion "
+                            "staff  "
+                            "mision ";
     }
     .medallero {
         align-items: center;
