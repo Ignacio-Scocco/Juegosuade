@@ -172,7 +172,7 @@ li {
     grid-template-rows: 0.1fr 0.1fr 0.1fr;
     grid-template-areas: "futbolMasculino futbolFemenino basquet"
                         "futbolMasculino voley basquet"
-                        "tenisMesa esports futbolTenis"; 
+                        "tenisMesa esports futbolTenis";
 }
 
 .grid__futbolMasculino {
@@ -226,7 +226,6 @@ li {
     align-items: center;
     grid-area: futbolTenis;
 }
-
 .futbol__masculino {
     border-radius: 10px;
     width: 300px;
