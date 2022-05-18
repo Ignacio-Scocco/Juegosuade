@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="recursos/favicon-16x16.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto&family=Tapestry&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,20 +16,39 @@
 </head>
 <body>
     <header>
-        <a href="index.html">
-        <img  class="header__logo" src="recursos/logo-juegos-uade.jpg" alt="logo de los Juegos UADE">
-        </a>
-        <h1>JUEGOS UADE</h1>                            
-        <nav>
-            <ul class="header__navegacion"> 
-                <li><a href="index.html">Home</a></li>
-                <li><a href="page/disciplinas.html">Disciplinas</a></li>
-                <li><a href="page/contacto.html">Contacto</a></li>
-                <li><a href="page/sobre-nosotros.html">Sobre Nosotros</a></li>
-                <li><a href="page/medallero.html">Medallero</a></li>
-                <li><a href="page/descargar-app.html">Descargar App</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img class="header__logo" src="recursos/logo-juegos-uade.jpg" alt="">
+                </a>
+                <h1>JUEGOS UADE</h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="link__nav" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="link__nav" href="page/disciplinas.html">Disciplinas</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="link__nav" href="page/contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="link__nav" href="page/sobre-nosotros.html">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="link__nav" href="page/medallero.html">Medallero</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="link__nav" href="page/descargar-app.html">Descargar App</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            </nav>
     </header>
     <main class="grid__containerIndex">
         <section class="portada" > 
@@ -38,7 +58,7 @@
         <a href="page/contacto.html"><button class="portada__botonEstetica">¡Contáctanos!</button></a>
         </section>
         <section class="portada__invitacion">
-            <p class="portada__parrafo"> Veni a participar de los Juegos Universitarios de la Universidad Argentina de la Empresa totalmente Gratis! Habra Shows, entrevistas especiales y muchos premios en juego! Podras participar en diferentes disciplinas y ,ademas, podran competir entre las diferentes facultades! 
+            <p class="portada__parrafo"> Veni a participar de los Juegos Universitarios de la Universidad Argentina de la Empresa totalmente Gratis! Habra Shows, entrevistas especiales y muchos premios en juego! Podras participar en diferentes disciplinas y ,ademas, podran competir entre las diferentes facultades!
             ¡No te lo podes perder!
             </p>
         </section>
@@ -62,8 +82,9 @@
             </a>
         </section>
         <div>
-            <p class="footer__Derechos">Todos los derechos reservados©</p>
+            <p class="footer__Derechos">Todos los derechos reservados</p>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
