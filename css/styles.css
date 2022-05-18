@@ -284,12 +284,9 @@ input {
     flex-direction: column;
     justify-content: center;
 }
-<<<<<<< HEAD
 .info__parrafo {
     font-family: font-family 'Roboto',sans-serif;
 }
-=======
->>>>>>> agregando-bootstrap
 .info__videoYoutube {
     padding: 0.5rem;
     border-radius: 20px;
