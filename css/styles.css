@@ -288,8 +288,8 @@ input {
 
 }
 .info__parrafo {
-    font-family: font-family: 'Roboto', sans-serif; ;
-}
+    font-family: font-family 'Roboto', sans-serif; ;
+    }
 .info__videoYoutube {
     padding: 0.5rem;
     border-radius: 20px;
