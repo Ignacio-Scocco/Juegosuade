@@ -571,8 +571,7 @@ footer {
         justify-content: center;
     }
     .portada__parrafo {
-        width: 80vw;
-
+        width: 80vw; 
     }
     .portada__logoDiseño {
         width: 98vw;
