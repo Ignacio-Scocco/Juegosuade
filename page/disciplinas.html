@@ -11,50 +11,70 @@
 </head>
 <body>
     <header>
-        <a href="../index.html">
-        <img class="header__logo"  src="../recursos/logo-juegos-uade.jpg" alt="Logo de los Juegos UADE">
-        </a>
-        <nav >
-            <ul class="header__navegacion"> 
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="disciplinas.html">Disciplinas</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
-                <li><a href="medallero.html">Medallero</a></li>
-                <li><a href="descargar-app.html">Descargar App</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img class="header__logo" src="../recursos/logo-juegos-uade.jpg" alt="">
+                </a>
+                <h1>JUEGOS UADE</h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="link__nav" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="link__nav" href="disciplinas.html">Disciplinas</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="link__nav" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="link__nav" href="sobre-nosotros.html">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="link__nav" href="medallero.html">Medallero</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="link__nav" href="descargar-app.html">Descargar App</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            </nav>
     </header>
-    <main>
+    <main> <!-- podria poner un overlay al texto, a probar. sino tambien una animacion. seria class="nombre-animacion" -->
         <h2>Disciplinas de los Juegos UADE</h2>
-        <section class="grid__containerDisciplinas">
-            <div class="grid__futbolMasculino">
-                <h3>Futbol Masculino</h3>
-                <img class="futbol__masculino" src="../recursos/futbol-masc.JPG" alt="foto de futbol masculino">
+        <section class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Futbol Masculino</h3>
+                    <img class="futbol__masculino" src="../recursos/futbol-masc.JPG" alt="foto de futbol masculino">
+                </div>
+                <div class="col-md-4">
+                    <h3>Futbol femenino</h3>
+                    <img class="futbol__femenino" src="../recursos/futbol-fem.JPG" alt="foto de futbol femenino">
+                </div>
+                <div class="col-md-4">
+                    <h3>Basquetbol 3x3</h3>
+                    <img class="basquet" src="../recursos/basquet.jpg" alt="foto de basquet 3x3">
+                </div>
             </div>
-            <div class="grid__futbolFemenino">
-            <h3>Futbol femenino</h3>
-                <img class="futbol__femenino" src="../recursos/futbol-fem.JPG" alt="foto de futbol femenino">
-            </div>         
-            <div class="grid__voley">
-            <h3>Voley mixto</h3>
-                <img class="voley" src="../recursos/voley.JPG" alt="foto de voley">
-            </div>
-            <div class="grid__esports">
-            <h3>E-sports</h3>
-                <img class="esports" src="../recursos/fifa.JPG" alt="foto de fifa">
-            </div>
-            <div class="grid__futbolTenis">
-            <h3>Futbol Tenis</h3>
-                <img class="futbol__tenis" src="../recursos/futbol-tenis.JPG" alt="foto de futbol Tenis">
-            </div>
-            <div class="grid__tenisMesa">
-            <h3>Tenis de mesa</h3>
-                <img class="tenis__mesa" src="../recursos/tenis-mesa.JPG" alt="foto de tenis de mesa">
-            </div>
-            <div class="grid__basquet">
-                <h3>Basquetbol 3x3</h3>
-                <img class="basquet" src="../recursos/basquet.jpg" alt="foto de basquet 3x3">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Tenis de mesa</h3>
+                    <img class="tenis__mesa" src="../recursos/tenis-mesa.JPG" alt="foto de tenis de mesa">
+                </div>
+                <div class="col-md-4">
+                    <h3>Voley mixto</h3>
+                    <img class="voley" src="../recursos/voley.JPG" alt="foto de voley">
+                </div>
+                <div class="col-md-4">
+                    <h3>E-sports</h3>
+                    <img class="esports" src="../recursos/fifa.JPG" alt="foto de fifa">
+                </div>
             </div>
         </section>
     </main>

@@ -11,24 +11,67 @@
 </head>
 <body>
     <header>
-        <a href="../index.html">
-        <img class="header__logo" src="../recursos/logo-juegos-uade.jpg" alt="Logo de los Juegos UADE">
-        </a>
-        <nav>
-            <ul class="header__navegacion"> 
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="disciplinas.html">Disciplinas</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
-                <li><a href="medallero.html">Medallero</a></li>
-                <li><a href="descargar-app.html">Descargar App</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img class="header__logo" src="../recursos/logo-juegos-uade.jpg" alt="">
+                </a>
+                <h1>JUEGOS UADE</h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="link__nav" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="link__nav" href="disciplinas.html">Disciplinas</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="link__nav" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="link__nav" href="sobre-nosotros.html">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="link__nav" href="medallero.html">Medallero</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="link__nav" href="descargar-app.html">Descargar App</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            </nav>
     </header>
     <main>
         <h2>¡Contáctanos!</h2>
-        <form class="contacto">
-            <label for="Nombre"></label>
+        <section class="contacto">
+            <div>
+                <input class="form-control" type="text" placeholder="Nombre" aria-label="default input example">
+            </div>
+            <div>
+                <input class="form-control" type="text" placeholder="Apellido" aria-label="default input example">
+            </div>
+            <div class="mb-3">
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="email">
+            </div>
+            <div>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" cols="30"></textarea>
+            </div>
+            <div>
+                <select class="form-select"  aria-label="Default select example">
+                <option selected> Seleccione la facultad</option>
+                <option value="1">Facultad de Comunicacion</option>
+                <option value="2">Facultad de Economia</option>
+                <option value="3">Facultad de Ingenieria y Exactas</option>
+                <option value="4">Facultad de Ciencias Juridicas y sociales</option>
+                <option value="5">Facultad de Ciencias de la Salud</option>
+                </select>
+            </div>
+            <!--        
+         <label for="Nombre"></label>
             <input class="contacto__nombre" type="text" placeholder="Nombre" />
             <div class="contacto__apellido">
                 <label for="Apellido"></label>
@@ -49,10 +92,9 @@
             </div>
             <div class="contacto__textarea">
                 <textarea  name="Consulta"  cols="40" rows="20"></textarea>
-            </div>
+            </div> -->
             <input class="contacto__boton" type="submit" value="Enviar">
-        </form>
-        </section>  
+        </section>
     </main>
     <footer>
         <section class="footer__Redes">
