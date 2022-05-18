@@ -162,7 +162,6 @@ li {
 .portada__logoDiseño {
     border-radius: 10px;
 }
-<<<<<<< HEAD
 .grid__containerDisciplinas {
     display: grid;
     gap: 10px;
@@ -224,10 +223,6 @@ li {
     align-items: center;
     grid-area: futbolTenis;
 }
-=======
-
-
->>>>>>> agregando-bootstrap
 .futbol__masculino {
     border-radius: 10px;
     width: 300px;
@@ -352,7 +347,7 @@ input {
 
 }
 .info__parrafo {
-    font-family: font-family: 'Roboto', sans-serif; ;
+    font-family: font-family 'Roboto', sans-serif; ;
 }
 .info__videoYoutube {
     padding: 0.5rem;
