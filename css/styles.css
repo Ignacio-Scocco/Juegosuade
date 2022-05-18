@@ -162,74 +162,6 @@ li {
 .portada__logoDiseño {
     border-radius: 10px;
 }
-.grid__containerDisciplinas {
-    display: grid;
-    gap: 10px;
-    grid-template-columns: 0.45fr 0.2fr 0.45fr;
-    grid-template-rows: 0.1fr 0.1fr 0.1fr;
-    grid-template-areas: "futbolMasculino futbolFemenino basquet"
-                        "futbolMasculino voley basquet"
-                        "tenisMesa esports futbolTenis";
-}
-
-.grid__futbolMasculino {
-    flex-direction: column;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    grid-area: futbolMasculino;
-}
-
-.grid__futbolFemenino {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    grid-area: futbolFemenino;
-}
-
-.grid__basquet {
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-area: basquet;
-}
-
-.grid__voley {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-area: voley;
-}
-
-.grid__tenisMesa {
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-area: tenisMesa;
-}
-.grid__esports {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-area: esports;
-}
-
-.grid__futbolTenis {
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-area: futbolTenis;
-}
-.futbol__masculino {
-    border-radius: 10px;
-    width: 300px;
-    height: 400px;
-    padding: 0.5rem;
-}
-
 .futbol__femenino {
     border-radius: 10px;
     width: 300px;
@@ -344,10 +276,9 @@ input {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
 }
 .info__parrafo {
-    font-family: font-family 'Roboto', sans-serif; ;
+    font-family: font-family 'Roboto', sans-serif;
 }
 .info__videoYoutube {
     padding: 0.5rem;
