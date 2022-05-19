@@ -284,9 +284,12 @@ input {
     flex-direction: column;
     justify-content: center;
 }
+<<<<<<< HEAD
 .info__parrafo {
     font-family: font-family 'Roboto',sans-serif;
 }
+=======
+>>>>>>> 6ba501cdac607911a9abe2e28a38a844120b4bef
 .info__videoYoutube {
     padding: 0.5rem;
     border-radius: 20px;
