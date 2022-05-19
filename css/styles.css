@@ -162,16 +162,6 @@ li {
 .portada__logoDiseño {
     border-radius: 10px;
 }
-/* .col-md-4 {
-    -webkit-filter: blur(3px);
-    filter: blur(3px);
-    -webkit-transition: .3s ease-in-out;
-    transition: .3s ease-in-out;
-}
-.col-md-4:hover {
-    -webkit-filter: blur(0);
-    filter: blur(0);
-} */
 .effect {
     -webkit-filter: blur(3px);
     filter: blur(3px);
@@ -276,6 +266,8 @@ input {
 }
 
 .grid__containerNosotros {
+    grid-template-rows: 0.1fr 0.5fr 0.5fr;
+    grid-template-columns: 1fr 1fr;
     display: grid;
     grid-template-areas: "titulo titulo"
                         "informacion staff" 
@@ -302,17 +294,19 @@ input {
 .info {
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 .info__videoYoutube {
     padding: 0.5rem;
     border-radius: 20px;
 }
+.info__parrafo {
+    width: 30vw;
+}
 .objetivos {
     padding: 00.5rem;
 }
 .accordion {
-    width: 60vw;
+    width: 40vw;
 }
 .accordion-body {
     color: white;
@@ -627,6 +621,9 @@ footer {
     .app {
         padding: 1rem;
         align-items: flex-start;
+    }
+    .accordion {
+        width: 70vw;
     }
 }
 
