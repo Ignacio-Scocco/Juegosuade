@@ -162,6 +162,26 @@ li {
 .portada__logoDiseño {
     border-radius: 10px;
 }
+/* .col-md-4 {
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+.col-md-4:hover {
+    -webkit-filter: blur(0);
+    filter: blur(0);
+} */
+.effect {
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+.effect:hover {
+    -webkit-filter: blur(0);
+    filter: blur(0);
+}
 .futbol__masculino {
     border-radius: 10px;
     width: 300px;
