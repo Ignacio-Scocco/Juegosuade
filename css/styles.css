@@ -433,6 +433,7 @@ input {
 
 .prototipo__imagen {
     height: 900px;
+    border-radius: 40px;
 }
 
 
