@@ -1,0 +1,685 @@
+@import 'variables';
+@import 'header';
+@import 'footer';
+@import 'mediaqueries';
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #ff9d00;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%23000' stroke-width='66.7' stroke-opacity='0.05' %3E%3Ccircle fill='%23ff9d00' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%23fb8d17' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%23f47d24' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%23ed6e2d' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%23e35f34' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%23d85239' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%23cc453e' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%23be3941' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%23b02f43' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%23a02644' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%23901e44' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%23801843' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%236f1341' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%235e0f3d' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%234e0c38' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%233e0933' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%232e062c' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%23210024' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+main {
+    grid-area: main;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    padding: 1rem;
+}
+h2 {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    font-size: 30px;
+}
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 20px;
+    padding: 0.5rem;
+}
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: white;
+    line-height: 20px;
+    padding: 0.5rem;
+}
+.header__logo {
+    transition: transform 190ms ease-out;
+    padding-left: 0.5rem;
+    margin: 0.5rem;
+    border-radius: 100px;
+}
+.header__logo:hover {
+    transform: translate(0px, 0px) scale(1.1, 1.1);
+}
+nav{
+    background-color: #ff9d00;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%23000' stroke-width='66.7' stroke-opacity='0.05' %3E%3Ccircle fill='%23ff9d00' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%23fb8d17' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%23f47d24' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%23ed6e2d' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%23e35f34' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%23d85239' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%23cc453e' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%23be3941' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%23b02f43' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%23a02644' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%23901e44' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%23801843' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%236f1341' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%235e0f3d' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%234e0c38' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%233e0933' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%232e062c' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%23210024' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+}
+.link__nav {
+    color: white;
+}
+
+.css-button-rounded--sand {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #adb5bd;
+    background: #adb5bd;
+}
+.css-button-rounded--sand:hover {
+    background: #fff;
+    color: #adb5bd
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+li {
+    padding: 0.5rem;
+}
+
+.grid__containerIndex {
+    display: grid;
+    grid-template-rows: 1fr 0.3fr 0.5fr;
+    grid-template-areas: "portada portada portada portada"
+                        "portada__boton portada__boton portada__boton portada__boton"
+                        "portada__invitacion portada__invitacion portada__logoJuegos2022 portada__logoJuegos2022";
+}
+
+.portada {
+    grid-area: portada;
+}
+.portada__fotoPrincipal {
+    height: 100%;
+    width: 100%;
+}
+.portada__boton {
+    grid-area: portada__boton;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.portada__botonEstetica {
+    min-width: 130px;
+    height: 40px;
+    color: rgb(20, 20, 20);
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    background: #ced4da;
+    box-shadow: 0 5px #adb5bd;
+}
+.portada__botonEstetica:hover {
+    box-shadow: 0 3px #adb5bd;
+    top: 1px;
+}
+.portada__botonEstetica:active {
+    box-shadow: 0 0 #adb5bd;
+    top: 5px;
+}
+
+.portada__invitacion {
+    grid-area: portada__invitacion;
+    display: flex;
+    justify-content: center;
+}
+
+.portada__parrafo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+}
+.portada__logoJuegos2022 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: portada__logoJuegos2022;
+}
+.portada__logoDiseño {
+    border-radius: 10px;
+}
+.effect {
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+.effect:hover {
+    -webkit-filter: blur(0);
+    filter: blur(0);
+}
+.futbol__masculino {
+    border-radius: 10px;
+    width: 300px;
+    height: 400px;
+    padding: 0.5rem;
+}
+
+.futbol__femenino {
+    border-radius: 10px;
+    width: 300px;
+    height: 400px;
+    padding: 0.5rem;
+}
+
+.voley {
+    border-radius: 10px;
+    width: 300px;
+    padding:0.5rem;
+}
+
+.esports {
+    border-radius: 10px;
+    width: 300px;
+    padding: 0.5rem;
+}
+
+.futbol__tenis {
+    border-radius: 10px;
+    width: 400px;
+    height: 300px;
+    padding: 0.5rem;
+}
+
+.tenis__mesa {
+    border-radius: 10px;
+    width: 300px;
+    padding: 0.5rem;
+}
+
+.basquet {
+    border-radius: 10px;
+    width: 300px;
+    height: 400px;
+    padding: 0.5rem;
+}
+
+.contacto {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+}
+
+input {
+    border-radius: 5px;
+    margin: 0.5rem;
+}
+.form-select {
+    margin: 0.5rem;
+    width: 30vw;
+}
+.form-control {
+    margin: 0.5rem;
+    width: 30vw;
+}
+
+
+.contacto__boton {
+    min-width: 130px;
+    height: 40px;
+    width: 150px;
+    color: rgb(20, 20, 20);
+    padding: 0.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    background: #ced4da;
+    box-shadow: 0 5px #adb5bd;
+}
+.contacto__boton:hover {
+    box-shadow: 0 3px #adb5bd;
+    top: 1px;
+}
+.contacto__boton:active {
+    box-shadow: 0 0 #adb5bd;
+    top: 5px;
+}
+
+.grid__containerNosotros {
+    grid-template-rows: 0.1fr 0.5fr 0.5fr;
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    grid-template-areas: "titulo titulo"
+                        "informacion staff" 
+                        "informacion staff  "
+                        "mision mision ";
+}
+.grid__titulo {
+    padding: 1rem;
+    margin: 1rem;
+    text-align: left;
+    grid-area: titulo;
+}
+.grid__informacion {
+    grid-area: informacion;
+} 
+.grid__staff {
+    grid-area: staff;
+}
+.grid__mision {
+    display: flex;
+    justify-content: flex-start;
+    grid-area: mision;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+}
+.info__videoYoutube {
+    padding: 0.5rem;
+    border-radius: 20px;
+}
+.info__parrafo {
+    width: 30vw;
+}
+.objetivos {
+    padding: 00.5rem;
+}
+.accordion {
+    width: 40vw;
+}
+.accordion-body {
+    color: white;
+}
+.nosotros__organizadores {
+    height: 500px;
+    width: 400px;
+    border-radius: 5px;
+}
+.ganadores__foto2019 {
+    height: 600px;
+    width: 300px;
+    border-radius: 10px;
+}
+.ganadores__foto2020 {
+    border-radius: 10px;
+    height: 600px;
+    width: 300px;
+}
+
+.ganadores__foto2021 {
+    border-radius: 10px;
+    height: 600px;
+    width: 300px;
+}
+
+
+
+.ganadores__titulo2019 {
+    font-style: italic;
+    font-size: 60px;
+    font-weight: 500;
+}
+
+.ganadores__titulo2020 {
+    font-style: italic;
+    font-size: 60px;
+    font-weight: 500;
+}
+
+.ganadores__titulo2021 {
+    font-style: italic;
+    font-size: 60px;
+    font-weight: 500;
+}
+.grid__containerApp {
+    display: grid;
+    grid-template-areas: "prototipo app app"
+                        "prototipo app app";
+    grid-template-columns: 1fr 0.9fr;
+}
+
+.app {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    grid-area: app;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.app__botonApple {
+    min-width: 130px;
+    height: 40px;
+    color: rgb(20, 20, 20);
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    background: #ced4da;
+    box-shadow: 0 5px #adb5bd;
+}
+.app__botonApple:hover {
+    box-shadow: 0 3px #adb5bd;
+    top: 1px;
+}
+.portada__botonEstetica:active {
+    box-shadow: 0 0 #adb5bd;
+    top: 5px;
+}
+
+
+
+.app__botonAndroid{
+    min-width: 130px;
+    height: 40px;
+    color: rgb(20, 20, 20);
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    background: #ced4da;
+    box-shadow: 0 5px #adb5bd;
+}
+.app__botonAndroid:hover {
+    box-shadow: 0 3px #adb5bd;
+    top: 1px;
+}
+.app__botonAndroid:active {
+    box-shadow: 0 0 #adb5bd;
+    top: 5px;
+}
+
+
+.prototipo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: prototipo;
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+.prototipo__imagen {
+    height: 900px;
+    border-radius: 40px;
+}
+
+
+footer {
+    grid-area: footer;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.footer__Redes {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.facebook {
+    transition: transform 190ms ease-out;
+    height: 5vh;
+}
+.facebook:hover {
+    transform: translate(0px, 0px) scale(1.1, 1.1);
+}
+
+.instagram {
+    transition: transform 190ms ease-out;
+    height: 5vh;
+}
+.instagram:hover {
+    transform: translate(0px, 0px) scale(1.1, 1.1);
+}
+.youtube {
+    transition: transform 190ms ease-out;
+    height: 5vh;
+}
+.youtube:hover {
+    transform: translate(0px, 0px) scale(1.1, 1.1);
+}
+.twitch {
+    transition: transform 190ms ease-out;
+    height: 5vh;
+}
+.twitch:hover {
+    transform: translate(0px, 0px) scale(1.1, 1.1);
+}
+
+.footer__Derechos {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+
+
+@media (min-width: 320px) and (max-width: 541px) {
+    .grid__containerIndex {
+        grid-template-rows: 0.5fr;
+        grid-template-areas: "portada"
+                            "portada__boton"
+                            "portada__invitacion"
+                            "portada__logoJuegos2022";
+    }
+    main {
+        padding: 0px;
+        margin: 0px;
+    }
+    h1 {
+        display: none;
+    }
+    h2 {
+        font-size: 17px;
+    }
+    h3 {
+        font-size: 15px;
+    }
+    .header__logo {
+        height: 15vh;
+    }
+    .portada__fotoPrincipal {
+        width: 100vw;
+    }
+    .portada__botonEstetica {
+        width: 30vw;
+    }
+    .portada__boton {
+        justify-content: center;
+    }
+    .portada__parrafo {
+        width: 80vw; 
+    }
+    .portada__logoDiseño {
+        width: 98vw;
+        height: 50vh;
+    }
+    .footer__Redes {
+        justify-content: space-between;
+        width: 90vw;
+    }
+    .footer__Derechos {
+        font-size: 10px;
+    }
+    .futbol__masculino {
+        padding: 0rem;
+        width: 60vw;
+    } 
+    .futbol__femenino {
+        width: 60vw;
+    }
+    .basquet {
+        width: 65vw;
+        height: 40vh;
+    }
+    .grid__voley {
+        justify-content: flex-start;
+    }
+    .voley {
+        width: 70vw;
+    }
+    .tenis__mesa {
+        width: 65vw;
+    }
+    .esports {
+        width: 75vw;
+    }
+    .futbol__tenis {
+        justify-content: flex-start;
+        width: 65vw;
+        height: 30vh;
+    }
+
+    .form-select {
+        width: 70vw;
+    }
+    .form-control {
+        width: 70vw;
+    }
+    .grid__containerNosotros {
+        grid-template-areas: "titulo"
+                            "informacion"
+                            "staff"
+                            "mision";
+        grid-template-columns: 0.1fr;
+    }
+    .info__parrafo {
+        font-size: 14px;
+        width: 98vw;
+    }
+    .info__videoYoutube {
+        width: 95vw;
+    }
+    .nosotros__organizadores {
+        width: 95vw;
+        padding: 0.3rem;
+    }
+    .d-flex {
+        flex-direction: column;
+    }
+    .ganadores__foto2019 {
+        height: 80vh;
+        padding: 0.5rem;
+    }
+    .ganadores__titulo2019 {
+        text-align: center;
+    }
+    .ganadores__foto2020 {
+        height: 80vh;
+        padding: 0.5rem;
+    }
+    .ganadores__titulo2020 {
+        text-align: center;
+    }
+    .ganadores__foto2021 {
+        height: 80vh;
+        padding: 0.5rem;
+    }
+    .ganadores__titulo2021 {
+        text-align: center;
+    }
+    .grid__containerApp {
+        grid-template-areas: "prototipo"
+                            "app";
+        grid-template-columns: 1fr;
+    }
+    .prototipo__imagen {
+        height: 90vh;
+    }
+    .app {
+        padding: 1rem;
+        align-items: flex-start;
+    }
+    .accordion {
+        width: 70vw;
+    }
+}
+
+@media (min-width: 541px) and (max-width: 720px) {
+    .grid__containerIndex {
+        grid-template-columns: 2fr 2fr;
+        grid-template-areas: "portada portada"
+                            "portada__boton portada__boton"
+                            "portada__invitacion portada__invitacion"
+                            "portada__logoJuegos2022 portada__logoJuegos2022";
+    }
+    .header__navegacion {
+        flex-direction: column;
+    }
+    .header__logo {
+        height: 15vh;
+    }
+    .portada__boton {
+        width: 100vw;
+    }
+    .portada__logoDiseño {
+        width: 90vw;
+        padding: 0.1rem;
+    }
+    .grid__containerNosotros {
+        grid-template-areas: "titulo "
+                            "informacion "
+                            "staff  "
+                            "mision ";
+    }
+    .d-flex {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer__Redes {
+        justify-content: space-around;
+        width: 100%;
+    }
+    .grid__containerApp {
+        grid-template-areas: "prototipo app"
+                            "prototipo app";
+        grid-template-columns: 1fr 1fr;
+    }
+    .prototipo__imagen {
+        height: 60vh;
+    }
+    .app {
+        padding: 1rem;
+        align-items: flex-start;
+    }
+}
