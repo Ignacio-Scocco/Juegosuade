@@ -1,4 +1,37 @@
 @charset "UTF-8";
+.header__logo {
+  transition: transform 190ms ease-out;
+  padding-left: 0.5rem;
+  margin: 0.5rem;
+  border-radius: 100px; }
+
+.header__logo:hover {
+  transform: translate(0px, 0px) scale(1.1, 1.1); }
+
+nav {
+  background-color: #ff9d00;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%23000' stroke-width='66.7' stroke-opacity='0.05' %3E%3Ccircle fill='%23ff9d00' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%23fb8d17' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%23f47d24' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%23ed6e2d' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%23e35f34' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%23d85239' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%23cc453e' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%23be3941' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%23b02f43' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%23a02644' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%23901e44' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%23801843' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%236f1341' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%235e0f3d' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%234e0c38' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%233e0933' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%232e062c' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%23210024' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover; }
+
+.link__nav {
+  color: white; }
+
+footer {
+  grid-area: footer;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  width: 100%; }
+
+.footer__redes {
+  display: flex;
+  justify-content: space-around; }
+
+.footer__derechos {
+  display: flex;
+  justify-content: center;
+  font-size: 20px; }
+
 * {
   margin: 0px;
   padding: 0px; }
@@ -45,43 +78,6 @@ p {
   line-height: 20px;
   padding: 0.5rem; }
 
-.header__logo {
-  transition: transform 190ms ease-out;
-  padding-left: 0.5rem;
-  margin: 0.5rem;
-  border-radius: 100px; }
-
-.header__logo:hover {
-  transform: translate(0px, 0px) scale(1.1, 1.1); }
-
-nav {
-  background-color: #ff9d00;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%23000' stroke-width='66.7' stroke-opacity='0.05' %3E%3Ccircle fill='%23ff9d00' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%23fb8d17' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%23f47d24' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%23ed6e2d' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%23e35f34' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%23d85239' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%23cc453e' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%23be3941' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%23b02f43' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%23a02644' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%23901e44' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%23801843' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%236f1341' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%235e0f3d' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%234e0c38' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%233e0933' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%232e062c' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%23210024' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
-  background-attachment: fixed;
-  background-size: cover; }
-
-.link__nav {
-  color: white; }
-
-.css-button-rounded--sand {
-  min-width: 130px;
-  height: 40px;
-  color: #fff;
-  padding: 5px 10px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  position: relative;
-  display: inline-block;
-  outline: none;
-  border-radius: 5px;
-  border: 2px solid #adb5bd;
-  background: #adb5bd; }
-
-.css-button-rounded--sand:hover {
-  background: #fff;
-  color: #adb5bd; }
-
 a {
   color: white;
   text-decoration: none; }
@@ -96,70 +92,60 @@ li {
 
 .portada {
   grid-area: portada; }
-
-.portada__fotoPrincipal {
-  height: 100%;
-  width: 100%; }
-
-.portada__boton {
-  grid-area: portada__boton;
-  display: flex;
-  justify-content: center;
-  padding: 1rem; }
-
-.portada__botonEstetica {
-  min-width: 130px;
-  height: 40px;
-  color: #141414;
-  padding: 5px 10px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  position: relative;
-  display: inline-block;
-  outline: none;
-  border-radius: 5px;
-  border: none;
-  background: #ced4da;
-  box-shadow: 0 5px #adb5bd; }
-
-.portada__botonEstetica:hover {
-  box-shadow: 0 3px #adb5bd;
-  top: 1px; }
-
-.portada__botonEstetica:active {
-  box-shadow: 0 0 #adb5bd;
-  top: 5px; }
-
-.portada__invitacion {
-  grid-area: portada__invitacion;
-  display: flex;
-  justify-content: center; }
-
-.portada__parrafo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 400px; }
-
-.portada__logoJuegos2022 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  grid-area: portada__logoJuegos2022; }
-
-.portada__logoDiseño {
-  border-radius: 10px; }
+  .portada__fotoPrincipal {
+    height: 100%;
+    width: 100%; }
+  .portada__boton {
+    grid-area: portada__boton;
+    display: flex;
+    justify-content: center;
+    padding: 1rem; }
+  .portada__invitacion {
+    grid-area: portada__invitacion;
+    display: flex;
+    justify-content: center; }
+  .portada__parrafo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px; }
+  .portada__logoJuegos2022 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: portada__logoJuegos2022; }
+  .portada__logoDiseño {
+    border-radius: 10px; }
+  .portada__botonEstetica {
+    min-width: 130px;
+    height: 40px;
+    color: #141414;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    background: #ced4da;
+    box-shadow: 0 5px #adb5bd; }
+  .portada__botonEstetica:hover {
+    box-shadow: 0 3px #adb5bd;
+    top: 1px; }
+  .portada__botonEstetica:active {
+    box-shadow: 0 0 #adb5bd;
+    top: 5px; }
 
 .effect {
   -webkit-filter: blur(3px);
   filter: blur(3px);
   -webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out; }
-
-.effect:hover {
-  -webkit-filter: blur(0);
-  filter: blur(0); }
+  .effect:hover {
+    -webkit-filter: blur(0);
+    filter: blur(0); }
 
 .futbol__masculino {
   border-radius: 10px;
@@ -205,6 +191,28 @@ li {
   flex-wrap: wrap;
   align-items: center;
   flex-direction: column; }
+  .contacto__boton {
+    min-width: 130px;
+    height: 40px;
+    width: 150px;
+    color: #141414;
+    padding: 0.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    background: #ced4da;
+    box-shadow: 0 5px #adb5bd; }
+  .contacto__boton:hover {
+    box-shadow: 0 3px #adb5bd;
+    top: 1px; }
+  .contacto__boton:active {
+    box-shadow: 0 0 #adb5bd;
+    top: 5px; }
 
 input {
   border-radius: 5px;
@@ -217,31 +225,6 @@ input {
 .form-control {
   margin: 0.5rem;
   width: 30vw; }
-
-.contacto__boton {
-  min-width: 130px;
-  height: 40px;
-  width: 150px;
-  color: #141414;
-  padding: 0.5rem;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  position: relative;
-  display: inline-block;
-  outline: none;
-  border-radius: 5px;
-  border: none;
-  background: #ced4da;
-  box-shadow: 0 5px #adb5bd; }
-
-.contacto__boton:hover {
-  box-shadow: 0 3px #adb5bd;
-  top: 1px; }
-
-.contacto__boton:active {
-  box-shadow: 0 0 #adb5bd;
-  top: 5px; }
 
 .grid__containerNosotros {
   grid-template-rows: 0.1fr 0.5fr 0.5fr;
@@ -269,13 +252,11 @@ input {
 .info {
   display: flex;
   flex-direction: column; }
-
-.info__videoYoutube {
-  padding: 0.5rem;
-  border-radius: 20px; }
-
-.info__parrafo {
-  width: 30vw; }
+  .info__videoYoutube {
+    padding: 0.5rem;
+    border-radius: 20px; }
+  .info__parrafo {
+    width: 30vw; }
 
 .objetivos {
   padding: 00.5rem; }
@@ -334,54 +315,27 @@ input {
   grid-area: app;
   margin: 1rem;
   padding: 1rem; }
-
-.app__botonApple {
-  min-width: 130px;
-  height: 40px;
-  color: #141414;
-  padding: 5px 10px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  position: relative;
-  display: inline-block;
-  outline: none;
-  border-radius: 5px;
-  border: none;
-  background: #ced4da;
-  box-shadow: 0 5px #adb5bd; }
-
-.app__botonApple:hover {
-  box-shadow: 0 3px #adb5bd;
-  top: 1px; }
-
-.portada__botonEstetica:active {
-  box-shadow: 0 0 #adb5bd;
-  top: 5px; }
-
-.app__botonAndroid {
-  min-width: 130px;
-  height: 40px;
-  color: #141414;
-  padding: 5px 10px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  position: relative;
-  display: inline-block;
-  outline: none;
-  border-radius: 5px;
-  border: none;
-  background: #ced4da;
-  box-shadow: 0 5px #adb5bd; }
-
-.app__botonAndroid:hover {
-  box-shadow: 0 3px #adb5bd;
-  top: 1px; }
-
-.app__botonAndroid:active {
-  box-shadow: 0 0 #adb5bd;
-  top: 5px; }
+  .app__boton {
+    min-width: 130px;
+    height: 40px;
+    color: #141414;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    background: #ced4da;
+    box-shadow: 0 5px #adb5bd; }
+  .app__boton:hover {
+    box-shadow: 0 3px #adb5bd;
+    top: 1px; }
+  .app__boton:active {
+    box-shadow: 0 0 #adb5bd;
+    top: 5px; }
 
 .prototipo {
   display: flex;
@@ -390,53 +344,33 @@ input {
   grid-area: prototipo;
   margin: 0.5rem;
   padding: 0.5rem; }
-
-.prototipo__imagen {
-  height: 900px;
-  border-radius: 40px; }
-
-footer {
-  grid-area: footer;
-  margin: 0.5rem;
-  padding: 0.5rem;
-  width: 100%; }
-
-.footer__Redes {
-  display: flex;
-  justify-content: space-around; }
+  .prototipo__imagen {
+    height: 900px;
+    border-radius: 40px; }
 
 .facebook {
   transition: transform 190ms ease-out;
   height: 5vh; }
-
-.facebook:hover {
-  transform: translate(0px, 0px) scale(1.1, 1.1); }
+  .facebook:hover {
+    transform: translate(0px, 0px) scale(1.1, 1.1); }
 
 .instagram {
   transition: transform 190ms ease-out;
   height: 5vh; }
-
-.instagram:hover {
-  transform: translate(0px, 0px) scale(1.1, 1.1); }
+  .instagram:hover {
+    transform: translate(0px, 0px) scale(1.1, 1.1); }
 
 .youtube {
   transition: transform 190ms ease-out;
   height: 5vh; }
-
-.youtube:hover {
-  transform: translate(0px, 0px) scale(1.1, 1.1); }
+  .youtube:hover {
+    transform: translate(0px, 0px) scale(1.1, 1.1); }
 
 .twitch {
   transition: transform 190ms ease-out;
   height: 5vh; }
-
-.twitch:hover {
-  transform: translate(0px, 0px) scale(1.1, 1.1); }
-
-.footer__Derechos {
-  display: flex;
-  justify-content: center;
-  font-size: 20px; }
+  .twitch:hover {
+    transform: translate(0px, 0px) scale(1.1, 1.1); }
 
 @media (min-width: 320px) and (max-width: 541px) {
   .grid__containerIndex {
@@ -529,8 +463,12 @@ footer {
   .app {
     padding: 1rem;
     align-items: flex-start; }
+    .app__boton {
+      margin: 00.5rem; }
   .accordion {
-    width: 70vw; } }
+    width: 70vw; }
+  .footer__derechos {
+    font-size: 10px; } }
 
 @media (min-width: 541px) and (max-width: 720px) {
   .grid__containerIndex {
@@ -561,4 +499,7 @@ footer {
     height: 60vh; }
   .app {
     padding: 1rem;
-    align-items: flex-start; } }
+    align-items: flex-start; }
+    .app__boton {
+      width: 40vw;
+      margin: 00.5rem; } }
