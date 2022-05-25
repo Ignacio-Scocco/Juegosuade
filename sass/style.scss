@@ -9,7 +9,7 @@
 }
 
 body {
-    background-color: #ff9d00;
+    background-color: $color-back;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%23000' stroke-width='66.7' stroke-opacity='0.05' %3E%3Ccircle fill='%23ff9d00' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%23fb8d17' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%23f47d24' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%23ed6e2d' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%23e35f34' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%23d85239' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%23cc453e' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%23be3941' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%23b02f43' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%23a02644' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%23901e44' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%23801843' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%236f1341' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%235e0f3d' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%234e0c38' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%233e0933' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%232e062c' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%23210024' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
     background-attachment: fixed;
     background-size: cover;
@@ -27,38 +27,38 @@ h1 {
     align-items: flex-start;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
-    color: white;
+    color: $color-texto;
     font-size: 35px;
-    padding: 1rem;
+    padding: $marg-padd*2;
 }
 h2 {
-    color: white;
+    color: $color-texto;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
-    margin: 0.5rem;
-    padding: 0.5rem;
+    margin: $marg-padd;
+    padding: $marg-padd;
     font-size: 30px;
 }
 h3 {
     font-family: 'Montserrat', sans-serif;
-    color: white;
+    color: $color-texto;
     font-size: 20px;
-    padding: 0.5rem;
+    padding: $marg-padd;
 }
 p {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
-    color: white;
+    color: $color-texto;
     line-height: 20px;
-    padding: 0.5rem;
+    padding: $marg-padd;
 }
 
 a {
-    color: white;
+    color: $color-texto;
     text-decoration: none;
 }
 li {
-    padding: 0.5rem;
+    padding: $marg-padd;
 }
 
 .grid__containerIndex {
@@ -79,7 +79,7 @@ li {
         grid-area: portada__boton;
         display: flex;
         justify-content: center;
-        padding: 1rem;
+        padding: $marg-padd*2;
     }
     &__invitacion {
         grid-area: portada__invitacion;
@@ -104,7 +104,7 @@ li {
     &__botonEstetica {
         min-width: 130px;
         height: 40px;
-        color: rgb(20, 20, 20);
+        color: $color-boton;
         padding: 5px 10px;
         font-weight: bold;
         cursor: pointer;
@@ -138,48 +138,40 @@ li {
 }
 .futbol__masculino {
     border-radius: 10px;
-    width: 300px;
-    height: 400px;
-    padding: 0.5rem;
+    width: $width-fotos;
+    height: $height-fotos;
+    padding: $marg-padd;
 }
 
 .futbol__femenino {
     border-radius: 10px;
-    width: 300px;
-    height: 400px;
-    padding: 0.5rem;
+    width: $width-fotos;
+    height: $height-fotos;
+    padding: $marg-padd;
 }
 
 .voley {
     border-radius: 10px;
-    width: 300px;
-    padding:0.5rem;
+    width: $width-fotos;
+    padding:$marg-padd;
 }
 
 .esports {
     border-radius: 10px;
-    width: 300px;
-    padding: 0.5rem;
+    width: $width-fotos;
+    padding: $marg-padd;
 }
-
-.futbol__tenis {
-    border-radius: 10px;
-    width: 400px;
-    height: 300px;
-    padding: 0.5rem;
-}
-
 .tenis__mesa {
     border-radius: 10px;
-    width: 300px;
-    padding: 0.5rem;
+    width: $width-fotos;
+    padding: $marg-padd;
 }
 
 .basquet {
     border-radius: 10px;
-    width: 300px;
-    height: 400px;
-    padding: 0.5rem;
+    width: $width-fotos;
+    height: $height-fotos;
+    padding: $marg-padd;
 }
 
 .contacto {
@@ -191,8 +183,8 @@ li {
         min-width: 130px;
         height: 40px;
         width: 150px;
-        color: rgb(20, 20, 20);
-        padding: 0.5rem;
+        color:$color-boton;
+        padding: $marg-padd;
         font-weight: bold;
         cursor: pointer;
         transition: all 0.3s ease;
@@ -216,14 +208,14 @@ li {
 
 input {
     border-radius: 5px;
-    margin: 0.5rem;
+    margin: $marg-padd;
 }
 .form-select {
-    margin: 0.5rem;
+    margin: $marg-padd;
     width: 30vw;
 }
 .form-control {
-    margin: 0.5rem;
+    margin: $marg-padd;
     width: 30vw;
 }
 .grid__containerNosotros {
@@ -236,8 +228,8 @@ input {
                         "mision mision ";
 }
 .grid__titulo {
-    padding: 1rem;
-    margin: 1rem;
+    padding:$marg-padd*2;
+    margin: $marg-padd*2;
     text-align: left;
     grid-area: titulo;
 }
@@ -256,7 +248,7 @@ input {
     display: flex;
     flex-direction: column;
     &__videoYoutube {
-        padding: 0.5rem;
+        padding: $marg-padd;
         border-radius: 20px;
     }
     &__parrafo {
@@ -264,13 +256,13 @@ input {
     }
 }
 .objetivos {
-    padding: 00.5rem;
+    padding: $marg-padd;
 }
 .accordion {
     width: 40vw;
 }
 .accordion-body {
-    color: white;
+    color: $color-texto;
 }
 .nosotros__organizadores {
     height: 500px;
@@ -279,37 +271,37 @@ input {
 }
 .ganadores__foto2019 {
     height: 600px;
-    width: 300px;
+    width: $width-fotos;
     border-radius: 10px;
 }
 .ganadores__foto2020 {
     border-radius: 10px;
     height: 600px;
-    width: 300px;
+    width: $width-fotos;
 }
 
 .ganadores__foto2021 {
     border-radius: 10px;
     height: 600px;
-    width: 300px;
+    width: $width-fotos;
 }
 
 
 
 .ganadores__titulo2019 {
-    font-style: italic;
+    font-style: $font-titulo-medallero;
     font-size: 60px;
     font-weight: 500;
 }
 
 .ganadores__titulo2020 {
-    font-style: italic;
+    font-style: $font-titulo-medallero;
     font-size: 60px;
     font-weight: 500;
 }
 
 .ganadores__titulo2021 {
-    font-style: italic;
+    font-style: $font-titulo-medallero;
     font-size: 60px;
     font-weight: 500;
 }
@@ -326,12 +318,12 @@ input {
     justify-content: center;
     flex-direction: column;
     grid-area: app;
-    margin: 1rem;
-    padding: 1rem;
+    margin: $marg-padd*2;
+    padding: $marg-padd*2;
     &__boton {
             min-width: 130px;
             height: 40px;
-            color: rgb(20, 20, 20);
+            color: $color-boton;
             padding: 5px 10px;
             font-weight: bold;
             cursor: pointer;
@@ -358,8 +350,8 @@ input {
     align-items: center;
     justify-content: center;
     grid-area: prototipo;
-    margin: 0.5rem;
-    padding: 0.5rem;
+    margin: $marg-padd;
+    padding: $marg-padd;
     &__imagen {
         height: 900px;
         border-radius: 40px;
@@ -499,21 +491,21 @@ input {
     }
     .ganadores__foto2019 {
         height: 80vh;
-        padding: 0.5rem;
+        padding: $marg-padd;
     }
     .ganadores__titulo2019 {
         text-align: center;
     }
     .ganadores__foto2020 {
         height: 80vh;
-        padding: 0.5rem;
+        padding: $marg-padd;
     }
     .ganadores__titulo2020 {
         text-align: center;
     }
     .ganadores__foto2021 {
         height: 80vh;
-        padding: 0.5rem;
+        padding: $marg-padd;
     }
     .ganadores__titulo2021 {
         text-align: center;
@@ -527,10 +519,10 @@ input {
         height: 90vh;
     }
     .app {
-        padding: 1rem;
+        padding:$marg-padd*2;
         align-items: flex-start;
         &__boton {
-            margin: 00.5rem;
+            margin: $marg-padd;
         }
     }
     .accordion {
@@ -586,11 +578,11 @@ input {
         height: 60vh;
     }
     .app {
-        padding: 1rem;
+        padding:$marg-padd*2;
         align-items: flex-start;
         &__boton {
             width: 40vw;
-            margin: 00.5rem;
+            margin: $marg-padd;
         }
     }
     
