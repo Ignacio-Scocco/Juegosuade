@@ -88,6 +88,11 @@ li {
   grid-template-rows: 1fr 0.3fr 0.5fr;
   grid-template-areas: "portada portada portada portada" "portada__boton portada__boton portada__boton portada__boton" "portada__invitacion portada__invitacion portada__logoJuegos2022 portada__logoJuegos2022"; }
 
+.navbar-toggler {
+  color: #141414;
+  background: #ced4da;
+  box-shadow: 0 5px #adb5bd; }
+
 .portada {
   grid-area: portada; }
   .portada__fotoPrincipal {
@@ -388,8 +393,8 @@ input {
   .portada__parrafo {
     width: 80vw; }
   .portada__logoDiseño {
-    width: 98vw;
-    height: 50vh; }
+    width: 70vw;
+    height: 30vh; }
   .footer__Redes {
     justify-content: space-between;
     width: 90vw; }
@@ -473,7 +478,7 @@ input {
   .portada__boton {
     width: 100vw; }
   .portada__logoDiseño {
-    width: 90vw;
+    width: 60vw;
     padding: 0.1rem; }
   .grid__containerNosotros {
     grid-template-areas: "titulo " "informacion " "staff  " "mision "; }
