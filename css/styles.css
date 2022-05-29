@@ -49,7 +49,7 @@ h1 {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   text-align: center;
   color: white;
   font-size: 35px;
@@ -57,14 +57,14 @@ h1 {
 
 h2 {
   color: white;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   text-align: center;
   margin: 0.5rem;
   padding: 0.5rem;
   font-size: 30px; }
 
 h3 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: white;
   font-size: 20px;
   padding: 0.5rem; }
@@ -150,37 +150,15 @@ li {
     -webkit-filter: blur(0);
     filter: blur(0); }
 
-.futbol__masculino {
+.futbol__masculino, .futbol__femenino, .basquet {
   border-radius: 10px;
   width: 300px;
   height: 400px;
   padding: 0.5rem; }
 
-.futbol__femenino {
+.voley, .esports, .tenis__mesa {
   border-radius: 10px;
   width: 300px;
-  height: 400px;
-  padding: 0.5rem; }
-
-.voley {
-  border-radius: 10px;
-  width: 300px;
-  padding: 0.5rem; }
-
-.esports {
-  border-radius: 10px;
-  width: 300px;
-  padding: 0.5rem; }
-
-.tenis__mesa {
-  border-radius: 10px;
-  width: 300px;
-  padding: 0.5rem; }
-
-.basquet {
-  border-radius: 10px;
-  width: 300px;
-  height: 400px;
   padding: 0.5rem; }
 
 .contacto {
@@ -215,11 +193,7 @@ input {
   border-radius: 5px;
   margin: 0.5rem; }
 
-.form-select {
-  margin: 0.5rem;
-  width: 30vw; }
-
-.form-control {
+.form-select, .form-control {
   margin: 0.5rem;
   width: 30vw; }
 
@@ -269,32 +243,12 @@ input {
   width: 400px;
   border-radius: 5px; }
 
-.ganadores__foto2019 {
+.ganadores__foto2019, .ganadores__foto2020, .ganadores__foto2021 {
   height: 600px;
   width: 300px;
   border-radius: 10px; }
 
-.ganadores__foto2020 {
-  border-radius: 10px;
-  height: 600px;
-  width: 300px; }
-
-.ganadores__foto2021 {
-  border-radius: 10px;
-  height: 600px;
-  width: 300px; }
-
-.ganadores__titulo2019 {
-  font-style: italic;
-  font-size: 60px;
-  font-weight: 500; }
-
-.ganadores__titulo2020 {
-  font-style: italic;
-  font-size: 60px;
-  font-weight: 500; }
-
-.ganadores__titulo2021 {
+.ganadores__titulo2019, .ganadores__titulo2020, .ganadores__titulo2021 {
   font-style: italic;
   font-size: 60px;
   font-weight: 500; }
@@ -345,28 +299,10 @@ input {
     height: 900px;
     border-radius: 40px; }
 
-.facebook {
+.facebook, .instagram, .youtube, .twitch {
   transition: transform 190ms ease-out;
   height: 5vh; }
-  .facebook:hover {
-    transform: translate(0px, 0px) scale(1.1, 1.1); }
-
-.instagram {
-  transition: transform 190ms ease-out;
-  height: 5vh; }
-  .instagram:hover {
-    transform: translate(0px, 0px) scale(1.1, 1.1); }
-
-.youtube {
-  transition: transform 190ms ease-out;
-  height: 5vh; }
-  .youtube:hover {
-    transform: translate(0px, 0px) scale(1.1, 1.1); }
-
-.twitch {
-  transition: transform 190ms ease-out;
-  height: 5vh; }
-  .twitch:hover {
+  .facebook:hover, .instagram:hover, .youtube:hover, .twitch:hover {
     transform: translate(0px, 0px) scale(1.1, 1.1); }
 
 @media (min-width: 320px) and (max-width: 541px) {
@@ -400,7 +336,7 @@ input {
     width: 90vw; }
   .footer__Derechos {
     font-size: 10px; }
-  .futbol__masculino {
+  .futbol__masculino, .futbol__femenino, .basquet {
     padding: 0rem;
     width: 60vw; }
   .futbol__femenino {
@@ -410,7 +346,7 @@ input {
     height: 40vh; }
   .grid__voley {
     justify-content: flex-start; }
-  .voley {
+  .voley, .esports, .tenis__mesa {
     width: 70vw; }
   .tenis__mesa {
     width: 65vw; }
@@ -420,7 +356,7 @@ input {
     justify-content: flex-start;
     width: 65vw;
     height: 30vh; }
-  .form-select {
+  .form-select, .form-control {
     width: 70vw; }
   .form-control {
     width: 70vw; }
@@ -437,10 +373,10 @@ input {
     padding: 0.3rem; }
   .d-flex {
     flex-direction: column; }
-  .ganadores__foto2019 {
+  .ganadores__foto2019, .ganadores__foto2020, .ganadores__foto2021 {
     height: 80vh;
     padding: 0.5rem; }
-  .ganadores__titulo2019 {
+  .ganadores__titulo2019, .ganadores__titulo2020, .ganadores__titulo2021 {
     text-align: center; }
   .ganadores__foto2020 {
     height: 80vh;

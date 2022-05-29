@@ -25,7 +25,7 @@ h1 {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    font-family: 'Montserrat', sans-serif;
+    font-family: $font-principal;
     text-align: center;
     color: $color-texto;
     font-size: 35px;
@@ -33,14 +33,14 @@ h1 {
 }
 h2 {
     color: $color-texto;
-    font-family: 'Montserrat', sans-serif;
+    font-family: $font-principal;
     text-align: center;
     margin: $marg-padd;
     padding: $marg-padd;
     font-size: 30px;
 }
 h3 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: $font-principal;
     color: $color-texto;
     font-size: 20px;
     padding: $marg-padd;
@@ -71,7 +71,7 @@ li {
 .navbar-toggler {
     color: $color-boton;
     background: #ced4da;
-    box-shadow: 0 5px #adb5bd;
+    box-shadow: 0 5px $color-boxshadow;
 }
 .portada {
     grid-area: portada;
@@ -119,14 +119,14 @@ li {
         border-radius: 5px;
         border: none;
         background: #ced4da;
-        box-shadow: 0 5px #adb5bd;
+        box-shadow: 0 5px $color-boxshadow;
     }
     &__botonEstetica:hover {
-        box-shadow: 0 3px #adb5bd;
+        box-shadow: 0 3px $color-boxshadow;
         top: 1px;
     }
     &__botonEstetica:active {
-        box-shadow: 0 0 #adb5bd;
+        box-shadow: 0 0 $color-boxshadow;
         top: 5px;
     }
 }
@@ -148,10 +148,7 @@ li {
 }
 
 .futbol__femenino {
-    border-radius: 10px;
-    width: $width-fotos;
-    height: $height-fotos;
-    padding: $marg-padd;
+    @extend .futbol__masculino;
 }
 
 .voley {
@@ -161,21 +158,13 @@ li {
 }
 
 .esports {
-    border-radius: 10px;
-    width: $width-fotos;
-    padding: $marg-padd;
+    @extend .voley;
 }
 .tenis__mesa {
-    border-radius: 10px;
-    width: $width-fotos;
-    padding: $marg-padd;
+    @extend .voley;
 }
-
 .basquet {
-    border-radius: 10px;
-    width: $width-fotos;
-    height: $height-fotos;
-    padding: $marg-padd;
+    @extend .futbol__masculino;
 }
 
 .contacto {
@@ -198,14 +187,14 @@ li {
         border-radius: 5px;
         border: none;
         background: #ced4da;
-        box-shadow: 0 5px #adb5bd;
+        box-shadow: 0 5px $color-boxshadow
     }
     &__boton:hover {
-        box-shadow: 0 3px #adb5bd;
+        box-shadow: 0 3px $color-boxshadow;
         top: 1px;
     }
     &__boton:active {
-        box-shadow: 0 0 #adb5bd;
+        box-shadow: 0 0 $color-boxshadow;
         top: 5px;
     }
 }
@@ -219,8 +208,7 @@ input {
     width: 30vw;
 }
 .form-control {
-    margin: $marg-padd;
-    width: 30vw;
+    @extend .form-select;
 }
 .grid__containerNosotros {
     grid-template-rows: 0.1fr 0.5fr 0.5fr;
@@ -279,15 +267,11 @@ input {
     border-radius: 10px;
 }
 .ganadores__foto2020 {
-    border-radius: 10px;
-    height: 600px;
-    width: $width-fotos;
+    @extend .ganadores__foto2019;
 }
 
 .ganadores__foto2021 {
-    border-radius: 10px;
-    height: 600px;
-    width: $width-fotos;
+    @extend .ganadores__foto2019;
 }
 
 
@@ -299,15 +283,11 @@ input {
 }
 
 .ganadores__titulo2020 {
-    font-style: $font-titulo-medallero;
-    font-size: 60px;
-    font-weight: 500;
+    @extend .ganadores__titulo2019;
 }
 
 .ganadores__titulo2021 {
-    font-style: $font-titulo-medallero;
-    font-size: 60px;
-    font-weight: 500;
+    @extend .ganadores__titulo2019;
 }
 .grid__containerApp {
     display: grid;
@@ -338,14 +318,14 @@ input {
             border-radius: 5px;
             border: none;
             background: #ced4da;
-            box-shadow: 0 5px #adb5bd;
+            box-shadow: 0 5px $color-boxshadow;
         }
         &__boton:hover {
-            box-shadow: 0 3px #adb5bd;
+            box-shadow: 0 3px $color-boxshadow;
             top: 1px;
         }
         &__boton:active {
-            box-shadow: 0 0 #adb5bd;
+            box-shadow: 0 0 $color-boxshadow;
             top: 5px;
         }
     }
@@ -370,25 +350,13 @@ input {
     }
 }
 .instagram {
-    transition: transform 190ms ease-out;
-    height: 5vh;
-    &:hover {
-        transform: translate(0px, 0px) scale(1.1, 1.1);
-    }
+    @extend .facebook;
 }
 .youtube {
-    transition: transform 190ms ease-out;
-    height: 5vh;
-    &:hover {
-        transform: translate(0px, 0px) scale(1.1, 1.1);
-    }
+    @extend .facebook;
 }
 .twitch {
-    transition: transform 190ms ease-out;
-    height: 5vh;
-    &:hover {
-        transform: translate(0px, 0px) scale(1.1, 1.1);
-    }
+    @extend .facebook;
 }
 
 @media (min-width: 320px) and (max-width: 541px) {
