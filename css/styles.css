@@ -89,9 +89,8 @@ li {
   grid-template-areas: "portada portada portada portada" "portada__boton portada__boton portada__boton portada__boton" "portada__invitacion portada__invitacion portada__logoJuegos2022 portada__logoJuegos2022"; }
 
 .navbar-toggler {
-  color: #141414;
-  background: #ced4da;
-  box-shadow: 0 5px #adb5bd; }
+  border: none;
+  font-size: 25px; }
 
 .portada {
   grid-area: portada; }
@@ -321,7 +320,8 @@ input {
   .header__logo {
     height: 15vh; }
   .portada__fotoPrincipal {
-    width: 100vw; }
+    width: 100vw;
+    height: 25vh; }
   .portada__botonEstetica {
     width: 30vw; }
   .portada__boton {
@@ -331,21 +331,13 @@ input {
   .portada__logoDiseño {
     width: 70vw;
     height: 30vh; }
-  .footer__Redes {
-    justify-content: space-between;
-    width: 90vw; }
-  .footer__Derechos {
-    font-size: 10px; }
   .futbol__masculino, .futbol__femenino, .basquet {
-    padding: 0rem;
     width: 60vw; }
   .futbol__femenino {
     width: 60vw; }
   .basquet {
     width: 65vw;
     height: 40vh; }
-  .grid__voley {
-    justify-content: flex-start; }
   .voley, .esports, .tenis__mesa {
     width: 70vw; }
   .tenis__mesa {
@@ -353,7 +345,6 @@ input {
   .esports {
     width: 75vw; }
   .futbol__tenis {
-    justify-content: flex-start;
     width: 65vw;
     height: 30vh; }
   .form-select, .form-control {
@@ -400,6 +391,9 @@ input {
       margin: 0.5rem; }
   .accordion {
     width: 70vw; }
+  .footer__Redes {
+    justify-content: space-between;
+    width: 90vw; }
   .footer__derechos {
     font-size: 10px; } }
 

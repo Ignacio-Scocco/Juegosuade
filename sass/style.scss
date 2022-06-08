@@ -69,9 +69,8 @@ li {
                         "portada__invitacion portada__invitacion portada__logoJuegos2022 portada__logoJuegos2022";
 }
 .navbar-toggler {
-    color: $color-boton;
-    background: #ced4da;
-    box-shadow: 0 5px $color-boxshadow;
+    border: none;
+    font-size: 25px;
 }
 .portada {
     grid-area: portada;
@@ -385,6 +384,7 @@ input {
     }
     .portada__fotoPrincipal {
         width: 100vw;
+        height: 25vh;
     }
     .portada__botonEstetica {
         width: 30vw;
@@ -399,15 +399,7 @@ input {
         width: 70vw;
         height: 30vh;
     }
-    .footer__Redes {
-        justify-content: space-between;
-        width: 90vw;
-    }
-    .footer__Derechos {
-        font-size: 10px;
-    }
     .futbol__masculino {
-        padding: 0rem;
         width: 60vw;
     } 
     .futbol__femenino {
@@ -416,9 +408,6 @@ input {
     .basquet {
         width: 65vw;
         height: 40vh;
-    }
-    .grid__voley {
-        justify-content: flex-start;
     }
     .voley {
         width: 70vw;
@@ -430,7 +419,6 @@ input {
         width: 75vw;
     }
     .futbol__tenis {
-        justify-content: flex-start;
         width: 65vw;
         height: 30vh;
     }
@@ -499,6 +487,10 @@ input {
     }
     .accordion {
         width: 70vw;
+    }
+    .footer__Redes {
+        justify-content: space-between;
+        width: 90vw;
     }
     .footer__derechos {
         font-size: 10px;
