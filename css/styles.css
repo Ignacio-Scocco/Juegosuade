@@ -90,7 +90,7 @@ li {
 
 .navbar-toggler {
   border: none;
-  font-size: 25px; }
+  background: #adb5bd; }
 
 .portada {
   grid-area: portada; }
