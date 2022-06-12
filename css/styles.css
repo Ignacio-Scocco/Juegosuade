@@ -229,13 +229,9 @@ input {
     width: 30vw; }
 
 .objetivos {
-  padding: 0.5rem; }
-
-.accordion {
-  width: 40vw; }
-
-.accordion-body {
-  color: white; }
+  padding: 0.5rem;
+  width: 40vw;
+  text-align: center; }
 
 .nosotros__organizadores {
   height: 500px;
@@ -362,6 +358,9 @@ input {
   .nosotros__organizadores {
     width: 95vw;
     padding: 0.3rem; }
+  .objetivos {
+    text-align: left;
+    width: 100vw; }
   .d-flex {
     flex-direction: column; }
   .ganadores__foto2019, .ganadores__foto2020, .ganadores__foto2021 {
@@ -398,6 +397,12 @@ input {
     font-size: 10px; } }
 
 @media (min-width: 541px) and (max-width: 720px) {
+  p {
+    font-size: 15px; }
+  h2 {
+    font-size: 30px; }
+  h3 {
+    font-size: 25px; }
   .grid__containerIndex {
     grid-template-columns: 2fr 2fr;
     grid-template-areas: "portada portada" "portada__boton portada__boton" "portada__invitacion portada__invitacion" "portada__logoJuegos2022 portada__logoJuegos2022"; }
@@ -412,13 +417,12 @@ input {
     padding: 0.1rem; }
   .grid__containerNosotros {
     grid-template-areas: "titulo " "informacion " "staff  " "mision "; }
+  .info__parrafo {
+    font-size: 15px; }
   .d-flex {
     flex-direction: column;
     justify-content: center;
     align-items: center; }
-  .footer__Redes {
-    justify-content: space-around;
-    width: 100%; }
   .grid__containerApp {
     grid-template-areas: "prototipo app" "prototipo app";
     grid-template-columns: 1fr 1fr; }
@@ -429,4 +433,9 @@ input {
     align-items: flex-start; }
     .app__boton {
       width: 40vw;
-      margin: 0.5rem; } }
+      margin: 0.5rem; }
+  .footer__Redes {
+    justify-content: space-around;
+    width: 100%; }
+  .footer__derechos {
+    font-size: 15px; } }

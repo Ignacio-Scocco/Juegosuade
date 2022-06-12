@@ -248,12 +248,8 @@ input {
 }
 .objetivos {
     padding: $marg-padd;
-}
-.accordion {
     width: 40vw;
-}
-.accordion-body {
-    color: $color-texto;
+    text-align: center;
 }
 .nosotros__organizadores {
     height: 500px;
@@ -446,6 +442,10 @@ input {
         width: 95vw;
         padding: 0.3rem;
     }
+    .objetivos {
+        text-align: left;
+        width: 100vw;
+    }
     .d-flex {
         flex-direction: column;
     }
@@ -498,6 +498,15 @@ input {
 }
 
 @media (min-width: 541px) and (max-width: 720px) {
+    p {
+        font-size: 15px
+    }
+    h2 {
+        font-size: 30px;
+    }
+    h3 {
+        font-size: 25px;
+    }
     .grid__containerIndex {
         grid-template-columns: 2fr 2fr;
         grid-template-areas: "portada portada"
@@ -524,14 +533,13 @@ input {
                             "staff  "
                             "mision ";
     }
+    .info__parrafo {
+        font-size: 15px;
+    }
     .d-flex {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
-    .footer__Redes {
-        justify-content: space-around;
-        width: 100%;
     }
     .grid__containerApp {
         grid-template-areas: "prototipo app"
@@ -549,5 +557,11 @@ input {
             margin: $marg-padd;
         }
     }
-    
+    .footer__Redes {
+        justify-content: space-around;
+        width: 100%;
+    }
+    .footer__derechos {
+        font-size: 15px;
+    }
 }
